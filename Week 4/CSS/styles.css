@@ -1,0 +1,54 @@
+.grid{
+    width: 800px;
+
+    /*CSS boz model:
+    margin:10px;----margin on all 4 sides
+    margin 10px 5px;----- 10px on top and bottom, 5px on left and right;
+    margin 10px 5px 7px;----- 10px of top, 5px on left/right, 7px on bottom;
+    margin 10px 5px 7px 4px;------top, left, right, bottom 
+    */
+    margin:10px auto 0;
+    border:2px solid black;
+
+    /*make this a grid container*/
+    display: grid;
+
+    /*set a grid with two columns, each 400px wide
+    
+    grid-template-columns:400px 400px;*/
+
+    /*Set a grid with two coulmns, each taking up an equal amount of space*/
+    grid-template-columns: repeat(4,1fr);
+    /*fr= "fraction", or a fraction of the available space*/ 
+
+    /*You can also use grid-template-rows: */
+    grid-template-rows:repeat(4, 100px);
+}
+
+.grid-item{
+        background:yellow;
+        font-size:24px;
+        border:2px dashed black;
+        height: 50px;
+    }
+/*using the grid column and row numers, position a box exactly*/
+
+.grid-item:nth-child(1){
+    grid-column-start:2;
+    grid-column-end:4;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+/*use the justify and align properties to position items*/
+
+.grid-item:nth-child(4){
+    /*align property aligns things vertically*/
+    align-self:end;
+    /*justify property aligns things horizontally*/
+    justify-content: end;
+    align-self: ;
+}
+
+
+}
