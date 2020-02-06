@@ -1,0 +1,234 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*********END OF CSS RESET***********/
+
+/****ADDING FONTS TO CSS***/
+
+@font-face{
+	src: url(../fonts/Montserrat-Bold.ttf);
+	font-family: montserrat bold;
+}
+
+@font-face{
+	src: url(../fonts/Montserrat-Medium.ttf);
+	font-family: montserrat medium;
+}
+@font-face{
+	src: url(../fonts/Montserrat-Regular.ttf);
+	font-family: Montserrat Regular;
+}
+
+
+body{
+	background-color: aliceblue;
+	
+}
+/***D Logo*/ 
+.image{
+	width: 70px;
+	height: auto;
+	border: 5px black;
+}
+
+/* DO YOU WANT TO BE YOUR OWN BOSS DESIGN */ 
+
+.title{
+    font-family:"montserrat bold";
+	font-size: 50px;
+	margin: 10px;
+	
+}
+.text{
+	font-size: 25px;
+	margin: 10px;
+	font-family: "montserrat regular";
+}
+.image-2{
+	width: 50%;
+	height: auto;
+
+}
+.firstform{
+	border-radius: 15px;
+	width: 300px;
+  	border: 15px white;
+  	padding: 50px;
+  	margin: 20px;
+
+}
+.apply{
+	font-size: 25px;
+	font-family:"montserrat bold";
+	padding: 10px;
+}
+.below{
+	font-size: 15px;
+	font-family:"montserrat regular";
+}
+.input{
+	font-size: 15px;
+	font-family: "montserrat regular";
+	padding: 10px;
+}
+.input-2{
+	font-family: "montserrat regular";
+	font-size: 13px;
+	padding: 13px;
+}
+.fields{
+	display: inline-block;
+	border: none;
+	padding: 15px;
+	margin: 30px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: 13px;
+}
+.checkbox{
+	width: 20px;
+	margin: 20px;
+	height: 20px;
+}
+.name{
+	display: block;
+	margin-bottom: 5px;
+	padding: 7px;
+	border: none;
+	background-color:lightgray;
+	border-radius: 5px;
+}
+.last{
+	display: block;
+	margin-bottom: 5px;
+	padding: 7px;
+	border: none;
+	background-color: lightgray;
+	border-radius: 5px;
+}
+.phone{
+	display: block;
+	margin-bottom: 5px;
+	border: none;
+	padding: 7px;
+	background-color: lightgray;
+    border-radius: 5px;
+}
+.email{
+	display: block;
+	margin-bottom: 5px;
+	border: none;
+	padding:7px;
+	background-color: lightgray;
+	border-radius: 5px;
+}
+.button{
+	display: center;
+	background-color: #57eeab;
+	font-style: "montserrat bold"; 	
+	padding: 10px 15px;
+	border: none;
+	border-radius: 15px;
+	font-family: "montserrat bold";
+	font-size: 25px;
+	text-align: center;
+}
+.bottom{
+	background-color: #fffd8c;
+	padding: 20px 20px;
+	border: none;
+	border-radius: 12px;
+}
+.footer{
+	font-family: "montserrat bold";
+	font-size: 15px;
+	padding: 25px;
+}
+.end{
+	font-family: "montserrat regular";
+	font-size: 15px;
+}
+.hours{
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+}
+.city{
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+}
+.button-2{
+	display: center;
+	width: 302px;
+	height: 40px;
+	border-radius: 15px;
+	border: none;
+	background-color: #ff8480;
+	font-family: "montserrat bold";
+	color: white;
+	font-size: 20px;
+}
+.icons{
+	display: inline;
+}
+ @media only screen and (min-width: 600px) {
+	 
+	body{
+		margin: 25px 40px;
+	}
+
+ }
+
+@media only screen and (min-width: 700px){
+.main-content{
+		display: flex;
+		flex-direction: row;
+	}
