@@ -1,68 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<body>
-  
-  <header>
-    <h1> BAKER HUT</h1>
-       <nav class="container">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-          </ul>
-        </nav>
-  </header>
-  
-  <!--Next we will be adding content to the landing page with a picture and quote -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <div class="container2">
-    <img src="images/donutss.jpg" alt="tart">
-    <div class="centered">PARADISE FOUND.</div>
-  </div>
-  
-  <!--This is a section with a photo on one side and a paragraph promoting the business-->
-  <!--BRING IN THE MARGIN OF THE PARAGPAPH and photo-->
-  <div class="container3">
-    <h2> About Catering</h1>
-      <div class="images">
-        <img src="images/fun.jpg" alt="breakfast">
-      </div>
-        <p class="para">
-          We pride ourselves on the quality and freshness of our ingredients with a dazzling array of delicious
-       menu items created in our kitchens daily. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque 
-       qui ullam ipsa nostrum accusamus quaerat eius cupiditate ipsam aliquid suscipit ea amet neque vitae quo vel esse, 
-       quisquam perspiciatis! Repellendus.</p>
-       
-  </div>
+    <title> Bootstrap This!</title>
+  </head>
+  <body>
+      <!-- This is a little bio about what bootstrap is-->
+      <section class="About">
+      <h1>Let's Learn About Bootstrap</h1>
+      <p>is an open-source, responsive, mobile-first, front-end framework used for quickly web sites.
+           It is built on Sass and jQuery and includes a responsive grid system, a modern, cross-browser theme and an extensive prebuilt
+            components library. Bootstrap is an excellent resource for quickly creating prototypes or entire web sites.</p>
+      </section>
 
-  <!--This is going to be a block element talking about specials-->
-  <div class="special">
-    <h2> Birthday Special</h2>
-    <div class="birthday">
-      <img src="images/cakee.jpg" alt="birthday doughnut">
+
+      <!-- We are showing the responsive grid layout bootstrap has in it. -->
+     
+      <section class="grid">
+          <h4> Bootsrap Grid</h4>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+              <div class="col-sm">
+                One of three columns
+              </div>
+            </div>
+          </div>
+      </section>
+       <p>The grid is built on twelve column system with five break points. The grid has three parts: containers,
+        rows, and columns. There are specific classes that are used for each part.</p>
+
+      <!-- Navigation  -->
+      <section>
+      <ul class="nav nav-pills">
+          <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Menu</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Order Now</a>
+        </li>
+      </ul>
+            <h4>Lets look at the navigation bar. </h4>
+            <p>Build a simple Ul(Unordered List), just like you would with building your own HTML and CSS, but instead give "li" classes
+                of "nav-item". Once done this, there are several different classes you can add to make your navigation bar more visubly 
+                appealing. For example:
+                Nav-pills, will create a bubble thing button design or your items. 
+                Nav-Link Active will 
+            </p>
+        </section>
+<!-- This section is talking about the different kind of alerts you can make in bootstap -->
+<h4>
+    Alerts provide a way to style messages to the user. 
+</h4>
+    <button class="btn btn-primary">
+        Primary
+    </button>
+    <div class="alert alert-primary" role="alert">
+        A simple primary alert-primary it out!
     </div>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis quos odio,
-         quisquam quibusdam nesciunt delectus cum aliquam veniam animi voluptas suscipit praesentium dolores 
-         modi eaque possimus veritatis sint nisi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, 
-         quidem. Maxime nulla maiores ab est aut, sequi quisquam delectus obcaecati totam, a molestiae illo accusamus 
-         reiciendis facilis architecto, voluptas quis.
-    </p>
-  </div>
-
-  <footer>
-    <div class="footer">
-      COPYRIGHT LUCY BROWN 2020
+    <div class="alert alert-danger" role="alert">
+        This is a danger alert—check it out!
     </div>
-  </footer>
+    <div class="alert alert-warning" role="alert">
+        This is a warning alert—check it out!
+    </div>
 
+<!-- We are making a simple example of card -->
+    <div class="card">
+        <div class="card-body">
+          This is text within a card body.
+        </div>  
+    </div>
+    <h4>Cards support a wide variety of content, including images, text, list groups, links, and more.
+    </h4>
+<!-- This is us going over the different buttons-->
+    <a class="btn btn-primary" href="#" role="button">Link</a>
+<button class="btn btn-primary" type="submit">Button</button>
+<input class="btn btn-primary" type="button" value="Input">
+<input class="btn btn-primary" type="submit" value="Submit">
+<input class="btn btn-primary" type="reset" value="Reset">
+<h4> Bootstrap includes button styles.</h4>
+
+<!--Bordered Tables-->
+
+<div class="container">
+    <h4>Bordered Table</h4>
+    <p>The .table-bordered class adds borders to a table:</p>            
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Lucy</td>
+          <td>Brown</td>
+          <td>Lucyb@example.com</td>
+        </tr>
+        <tr>
+          <td>Holly</td>
+          <td>Brown</td>
+          <td>Holly@example.com</td>
+        </tr>
+        <tr>
+          <td>Mathieu</td>
+          <td>Durand</td>
+          <td>Mathieu@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   
-</body>
+
+
+
+    
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
