@@ -1,0 +1,271 @@
+
+body{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  size: 200px;
+  color: black;
+  font-weight: 500;
+}
+
+/*******Nagivation to be styled on verital******/
+nav{
+  margin: auto;
+  width: 100%;
+  text-decoration: none;
+}
+.nav a{
+  font-size:25px;
+  text-decoration: none;
+  list-style-type: none;
+}
+.nav a{
+  font-size:25px;
+  text-decoration: none;
+  list-style-type: none;
+}
+   
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-size: small;
+    background-color: white;
+  }
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Change the link color on hover */
+li a:hover {
+    background-color:white;
+    color: white;
+    text-decoration: none;
+  }
+
+/***************************HOMEPAGE DESIGN FOR IMAGE< TRIANGLE, AND TEXT*******/ 
+.image{
+    float: right;
+    
+}
+.geo{
+    float: left;
+    width: 100%;
+}
+.text{
+  font-size: 50px;
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.arrow-right {
+  
+  width: 0; 
+  height: 0; 
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 100px solid black;
+  position: absolute;
+  bottom: 0;
+}
+
+/*ABOUT PAGE*/
+.lucy {
+  position: center;
+  margin: 30px;
+}
+
+/******************STYLE THE PARAGRAPH SOMEHOW******/
+.main-content{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+/*PORTFOLIO PAGE*/
+
+/*Centering all the text over the images & making size and colour bigger and more visible*/ 
+.digital {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.digital2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 50px;
+}
+.coding {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.coding2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size: 50px;
+}
+.photography {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.photography2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size: 50px;
+}
+.designer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.designer2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:black;
+  font-size: 50px;
+  font-weight: bold;
+  border-color: black;
+  border: black;
+}
+/****** FOOTER********/ 
+.footer{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color:lightgrey;
+  
+}
+.social img{
+  width: 59px;
+  height: 59px;
+  text-align: center;
+  display: inline-block;
+}
+  
+
+/****************** TABLET VIEW***************/
+
+@media only screen and (min-width: 600px) {
+  .nav ul{
+    display:flex;
+    flex-direction: row-reverse;
+  }  
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li a {
+    text-align: center;
+    color:black;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+
+
+  /*******HOMEPAGE DESIGN**********/
+
+  /*Make image bigger and more margin*/ 
+
+  .main{
+    position: absolute;
+    right: 200px;
+    height: 700px;
+    width: 500px;
+  }
+  .image{
+    width: 30%;
+    height: 50%;
+    margin: 20px;
+    position: relative;
+    
+  }
+  .nav a{
+    font-size:30px;
+    text-decoration: none;
+  }
+     
+
+  @media only screen and (min-width: 900px) {
+
+    .work{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      overflow: hidden;
+    
+    }
+    .coding{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    
+    }
+    .photography{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+    .designer{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+      
+    }
+    .work{
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+   .grid-container{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 1fr;
+   }
+   .main-content{
+     border: black;
+     line-height: 2;
+     padding: 20px;
+   }
+
+
+
+
+
+
+
+  
+}
